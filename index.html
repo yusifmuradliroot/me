@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yusf</title>
 
-  <!-- Google Fonts: Inter (temiz ve modern) -->
+  <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
@@ -20,9 +20,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      cursor: pointer;
       font-family: 'Inter', sans-serif;
-      transition: opacity 0.3s;
     }
 
     h1 {
@@ -35,20 +33,82 @@
       background-clip: text;
     }
 
-    p {
-      font-size: 1.1rem;
-      color: #555;
-      font-weight: 400;
-      margin-top: 0.5rem;
+    .links {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 1.2rem;
+      font-size: 0.95rem;
     }
 
-    body:hover p {
-      color: #777;
+    .link-item {
+      display: flex;
+      align-items: center;
+      opacity: 0.85;
+      transition: opacity 0.3s, transform 0.2s;
+    }
+
+    .link-item:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
+    .link-name {
+      color: #c9d1d9;
+      margin-right: 0.4rem;
+      white-space: nowrap;
+    }
+
+    .link-handle {
+      color: #888;
+      font-weight: 400;
+    }
+
+    .link-arrow {
+      color: #888;
+      margin-left: 0.4rem;
+      font-weight: bold;
+    }
+
+    .link-item:hover .link-handle,
+    .link-item:hover .link-arrow {
+      color: #667eea;
     }
   </style>
 </head>
-<body onclick="window.location.href='https://yusifmuradliroot.github.io/easylink/'">
+<body>
+
   <h1>Yusf</h1>
-  <p>easylink</p>
+
+  <div class="links">
+    <!-- Instagram -->
+    <a href="https://instagram.com/yusifmuradlieon" target="_blank" class="link-item">
+      <span class="link-name">Instagram</span>
+      <span class="link-handle">@yusifmuradlieon</span>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://tiktok.com/@yusifmuradliaevix" target="_blank" class="link-item">
+      <span class="link-name">TikTok</span>
+      <span class="link-handle">@yusifmuradliaevix</span>
+      <span class="link-arrow">→</span>
+    </a>
+
+    <!-- Telegram -->
+    <a href="https://t.me/yusifmuradlimonster" target="_blank" class="link-item">
+      <span class="link-name">Telegram</span>
+      <span class="link-handle">@yusifmuradlimonster</span>
+      <span class="link-arrow">✈️</span>
+    </a>
+
+    <!-- Discord -->
+    <a href="https://discord.com/users/yusifmuradli.dharma" target="_blank" class="link-item">
+      <span class="link-name">Discord</span>
+      <span class="link-handle">@yusifmuradli.dharma</span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
 </body>
 </html>
